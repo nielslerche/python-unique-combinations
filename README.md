@@ -1,2 +1,23 @@
-# Unique combinations with Python
-I made this little script as a challenge for myself during our lecture on idea generation, which included a talk about morphologic analysis of configurations of a designed product. I wanted to see if I could make a program to help creatives easily make a configuration of multiple categories, then generate the unique combinations (or all total products), and put the results in a human-readable file. This is by NO MEANS a good implementation of such a low-level abstract process, but it is one I am proud of to have made, as I thought I had a very bad understanding of logic.
+A primitive script made for listing all possible products of items in multiple lists. Run via a terminal, like this:
+```bash
+python python-unique-combinations.py <input-file> <output-file>
+```
+
+Takes in a JSON-formatted file, like this:
+```json
+{
+  "fruits": [
+    "Apples",
+    "Oranges",
+    "Tangerines",
+    "Pears"
+  ],
+  "desserts": [
+    "Pie",
+    "Cake",
+    "Sorbet"
+  ]
+  ...
+}
+```
+Note that it accepts a multiple of lists, but amount of calculations grow exponentially.
